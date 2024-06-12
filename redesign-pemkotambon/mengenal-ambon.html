@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemerintah Kota Ambon</title>
+  <!--- favicon
+  -->
+  <link rel="shortcut icon" href="./lambang.svg" type="image/svg+xml">
+  <!--- custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- CSS slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <!-- - google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--- preload images-->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.png">
+</head>
+<body id="top">
+  <!--- #HEADER-->
+  <header class="header">
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Portal Resmi Pemerintah Kota</p>
+      </div>
+    </div>
+    <div class="header-top" data-header>
+      <div class="container">
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Pencarian" class="search-field">
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="400" height="" alt="logo">
+        </a>
+        <div class="logo2">
+          <img src="./assets/images/amboncity.jpeg" width="80" height="100" alt="logo2">
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link has-after">Home</a>
+            </li>
+            <li>
+              <a href="profil.html" class="navbar-link has-after">Profil</a>
+            </li>
+            <li>
+              <a href="mengenal-ambon.html" class="navbar-link has-after">Mengenal Ambon</a>
+            </li>
+            <li>
+              <a href="potensi-daerah.html" class="navbar-link has-after">Potensi Daerah</a>
+            </li>
+            <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link has-after">Open-Government <i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Alur Permohonan Informasi</a></li>
+                <li><a class="dropdown-item" href="#">PPID</a></li>
+                <li><a class="dropdown-item" href="#">Data Sekolah</a></li>
+                <li><a class="dropdown-item" href="#">Transparansi Anggaran</a></li>
+              </ul>
+            </li>
+            <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link has-after">Informasi<i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Produk Hukum Daerah</a></li>
+                <li><a class="dropdown-item" href="#">Perbankan</a></li>
+                <li><a class="dropdown-item" href="#">Produk Layanan</a></li>
+                <li><a class="dropdown-item" href="#">Kode Pos</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="berita.html" class="navbar-link has-after">Berita</a>
+            </li>
+            <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link has-after">Hubungi Kami<ion-icon name="chevron-down" style=></ion-icon></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Kontak</a></li>
+                <li><a class="dropdown-item" href="#">Saran</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+<!--- #MOBILE NAVBAR-->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+      <ul class="navbar-list">
+        <li>
+          <a href="index.html"navbar-link" data-nav-link>Home</a>
+        </li>
+        <li>
+          <a href="profil.html" class="navbar-link" data-nav-link>Profil</a>
+        </li>
+        <li>
+          <a href="mengenal-ambon.html" class="navbar-link" data-nav-link>Mengenal Ambon</a>
+        </li>
+        <li>
+          <a href="potensi-daerah.html" class="navbar-link" data-nav-link>Potensi Daerah</a>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="#" class="navbar-link has-after">Informasi<i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Produk Hukum Daerah</a></li>
+            <li><a class="dropdown-item" href="#">Perbankan</a></li>
+            <li><a class="dropdown-item" href="#">Produk Layanan</a></li>
+            <li><a class="dropdown-item" href="#">Kode Pos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="berita.html" class="navbar-link has-after">Berita</a>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="#" class="navbar-link has-after">Hubungi Kami<ion-icon name="chevron-down"></ion-icon></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Kontak</a></li>
+            <li><a class="dropdown-item" href="#">Saran</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+  <main>
+    <article>
+<!--- #HERO-->
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+          <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+                <div class="card-content">
+                    <p class="price">Mengenal Ambon</p>
+                    <p class="hero-text">
+                      City of Music, City of Peace, City of Peace
+                    </p>
+                  </div>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--- #COLLECTION-->
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+          <ul class="collection-list">
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">5 Kebijakan Prioritas</h2>
+                <p class="card-text">Pejabat Walikota Ambon</p>
+                <a href="#" class="btn-link">
+                  <span class="span">Lihat Selengkapnya</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <div class="has-bg-image" style="background-image: url('./assets/images/lapor.png')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">LAPOR</h2>
+                <p class="card-text">Layanan Aspirasi dan Pengaduan Online Rakyat</p>
+                <a href="#" class="btn-link">
+                  <span class="span">Lihat Selengkapnya</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <div class="has-bg-image" style="background-image: url('./assets/images/wajar.png')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">WAJAR</h2>
+                <p class="card-text">Walikota Jumpa Rakyat</p>
+                <a href="#" class="btn-link">
+                  <span class="span">Lihat Selengkapnya</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <div class="has-bg-image" style="background-image: url('./assets/images/bijak.png')"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--- #Berita-->
+      <section class="section berita" id="berita" aria-label="shop" data-section>
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Berita Terbaru</h2>
+            <a href="berita.html" class="btn-link">
+              <span class="span">Lihat Semua</span>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+    <!--- #NEWS SECTION-->
+      <ul class="has-scrollbar">
+        <li class="scrollbar-item">
+          <div class="news-card">
+            <div class="card-banner img-holder" style="--width: 540; --height: 380;">
+              <img src="./assets/images/berita-a.jpeg" width="540" height="720" loading="lazy"
+                alt="Facial cleanser" class="img-cover">
+            </div>
+            <div class="card-content">
+              <div class="price">
+                <span class="span">Judul Berita</span>
+              </div>
+              <h3>
+                <a href="#" class="card-title">Selasa, 18 Maret 2024</a>
+              </h3>
+              <div class="card-rating">
+                <p class="rating-text">Diterbitkan 4 Hari Lalu</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="scrollbar-item">
+          <div class="news-card">
+            <div class="card-banner img-holder" style="--width: 540; --height: 380;">
+              <img src="./assets/images/berita-a.jpeg" width="540" height="720" loading="lazy"
+                alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+            </div>
+            <div class="card-content">
+              <div class="price">
+                <span class="span">Judul Berita</span>
+              </div>
+              <h3>
+                <a href="#" class="card-title">Selasa, 18 Maret 2024</a>
+              </h3>
+              <div class="card-rating">
+                <p class="rating-text">Diterbitkan 4 Hari Lalu</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="scrollbar-item">
+          <div class="news-card">
+            <div class="card-banner img-holder" style="--width: 540; --height: 380;">
+              <img src="./assets/images/berita-a.jpeg" width="540" height="720" loading="lazy"
+                alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+            </div>
+            <div class="card-content">
+              <div class="price">
+                <span class="span">Judul Berita</span>
+              </div>
+              <h3>
+                <a href="#" class="card-title">Selasa, 18 Maret 2024</a>
+              </h3>
+              <div class="card-rating">
+                <p class="rating-text">Diterbitkan 4 Hari Lalu</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="scrollbar-item">
+          <div class="news-card">
+            <div class="card-banner img-holder" style="--width: 540; --height: 380;">
+              <img src="./assets/images/berita-a.jpeg" width="540" height="720" loading="lazy"
+                alt="Facial cleanser" class="img-cover">
+            </div>
+            <div class="card-content">
+              <div class="price">
+                <span class="span">Judul Berita</span>
+              </div>
+              <h3>
+                <a href="#" class="card-title">Selasa, 18 Maret 2024</a>
+              </h3>
+              <div class="card-rating">
+          <p class="rating-text">Diterbitkan 4 Hari Lalu</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="scrollbar-item">
+          <div class="news-card">
+            <div class="card-banner img-holder" style="--width: 540; --height: 380;">
+              <img src="./assets/images/berita-a.jpeg" width="540" height="720" loading="lazy"
+                alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+            </div>
+            <div class="card-content">
+              <div class="price">
+                <span class="span">Judul Berita</span>
+              </div>
+              <h3>
+                <a href="#" class="card-title">Selasa, 18 Maret 2024</a>
+              </h3>
+              <div class="card-rating">
+                <p class="rating-text">Diterbitkan 4 Hari Lalu</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="scrollbar-item">
+          <div class="news-card">
+            <div class="card-banner img-holder" style="--width: 540; --height: 380;">
+              <img src="./assets/images/berita-a.jpeg" width="540" height="720" loading="lazy"
+                alt="Facial cleanser" class="img-cover">
+            </div>
+            <div class="card-content">
+              <div class="price">
+                <span class="span">Judul Berita</span>
+              </div>
+              <h3>
+                <a href="#" class="card-title">Selasa, 18 Maret 2024</a>
+              </h3>
+              <div class="card-rating">
+                <p class="rating-text">Diterbitkan 4 Hari Lalu</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+      </section>
+      <!--- #BANNER Section Pengumuman dan Harga Pasar-->
+
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+          <ul class="banner-list">
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+                <p class="card-subtitle">Cek Pengumuman</p>
+                <h2 class="h2 card-title">Pemerintah Kota Ambon</h2>
+                <a href="cekpengumuman.html" class="btn btn-secondary">Cek Pengumuman</a>
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.jpg')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+                <h2 class="h2 card-title">Laporan Harian Pasar</h2>
+                <p class="card-text">
+                   Harga Pasar Arumbai
+                </p>
+                <a href="hargapangan.html" class="btn btn-secondary">Cek Harga</a>
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-2.jpg')"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--- #FEATURE-->
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+          <h2 class="h2-large section-title">Dinas Terkait</h2>
+          <div class="carousel-container">
+            <div class="flexA-list carousel">
+              <!-- Slide 1 -->
+              <div class="flexA-item">
+                <div class="featureA-card">
+                  <img src="./assets/images/feature-1.jpg" class="cardA-icon" alt="Logo Dinas">
+                  <h3 class="h3 cardA-title">Dinas Komunikasi dan Persandian</h3>
+                  <p class="cardA-text"><a href="https://diskominfo.ambon.go.id">diskominfo.ambon.go.id</a></p>
+                </div>
+              </div>
+              <div class="flexA-item">
+                <div class="featureA-card">
+                  <img src="./assets/images/feature-1.jpg" class="cardA-icon" alt="Logo Dinas">
+                  <h3 class="h3 cardA-title">Dinas Komunikasi dan Persandian</h3>
+                  <p class="cardA-text"><a href="https://diskominfo.ambon.go.id">diskominfo.ambon.go.id</a></p>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="flexA-item">
+                <div class="featureA-card">
+                  <img src="./assets/images/feature-2.jpg" class="cardA-icon" alt="Logo Dinas">
+                  <h3 class="h3 cardA-title">Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu</h3>
+                  <p class="cardA-text"><a href="https://ptsp.ambon.go.id">ptsp.ambon.go.id</a></p>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="flexA-item">
+                <div class="featureA-card">
+                  <img src="./assets/images/feature-3.jpg" class="cardA-icon" alt="Logo Dinas">
+                  <h3 class="h3 cardA-title">Dinas Perindustrian dan Penanaman Modal</h3>
+                  <p class="cardA-text"><a href="https://disperindag.ambon.go.id">disperindag.ambon.go.id</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- #BLOG-->
+      <section class="section blog" id="blog" aria-label="blog" data-section>
+        <div class="container">
+          <h2 class="h2-large section-title">More to Discover</h2>
+          <ul class="flex-list">
+            <li class="flex-item">
+              <div class="blog-card">
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-1.png" width="700" height="450" loading="lazy" alt="Find a Store"
+                    class="img-cover">
+                </figure>
+                <a href="https://oss.go.id/" class="btn-link">
+                  <span class="span">oss.go.id</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li class="flex-item">
+              <div class="blog-card">
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-2.png" width="700" height="450" loading="lazy" alt="From Our Blog"
+                    class="img-cover">
+                </figure>
+                <a href="https://ambonkota.bps.go.id/" class="btn-link">
+                  <span class="span">ambon.kota.bos.go.id</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li class="flex-item">
+              <div class="blog-card">
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-3.png" width="700" height="450" loading="lazy" alt="Our Story"
+                    class="img-cover">
+                </figure>
+                <a href="https://gistaru.atrbpn.go.id/" class="btn-link">
+                  <span class="span">gistaru.atrbpn.go.id</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+  <!--- #FOOTER-->
+  <footer class="footer" data-section>
+    <div class="container">
+      <div class="footer-top">
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Lokasi Kantor</p>
+          </li>
+          <li>
+            <p class="footer-list-text">
+              Alamat Dinas Pemkot :  <a href="#" class="link">Maps</a>
+            </p>
+          </li>
+          <li>
+            <p class="footer-list-text bold">+(62)085 2568 4593</p>
+          </li>
+          <li>
+            <p class="footer-list-text">hello@gmail.com</p>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Dikelola Oleh</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Bidang Informasi dan Komunikasi Publik serta Statistik Dinas Komunikasi dan Informatika Kota Ambon</a>
+          </li>
+        </ul>
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="Glowing">
+      </a>
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2024 Pemerintah Kota Ambon
+          </p>
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--- #BACK TO TOP-->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+  <script>
+    // Menangani penampilan dropdown saat mengarahkan kursor
+    document.querySelectorAll('.dropdown').forEach(link => {
+      link.addEventListener('mouseenter', function() {
+        const dropdown = this.querySelector('.dropdown-menu');
+        if (dropdown) {
+          dropdown.style.display = 'block';
+        }
+      });
+  
+      link.addEventListener('mouseleave', function() {
+        const dropdown = this.querySelector('.dropdown-menu');
+        if (dropdown) {
+          dropdown.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+  <!--- custom js link -->
+  <script src="./assets/js/script.js" defer></script>
+  <!--- ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- JavaScript Dinas Terkait-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3, // Menampilkan 2 card per slide
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+</body>
+</html>

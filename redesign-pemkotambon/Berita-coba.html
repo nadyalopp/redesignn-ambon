@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemerintah Kota Ambon</title>
+
+
+ 
+ <!-- 
+    - bootstrap
+  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3-alpha1/dist/css/bootstrap.min." rel="stylesheet">
+  
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./lambang.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Portal Resmi Pemerintah Kota</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Cari" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="200" height="" alt="logo">
+        </a>
+
+        <div class="logo2">
+          <img src="./assets/images/amboncity.png" alt="logo2">
+        </div>
+
+
+      <!-- 
+        <div class="header-actions">
+
+          <button class="header-action-btn" aria-label="user">
+            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart item">
+            <data class="btn-text" value="0">$0.00</data>
+
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+        </div>
+        -->
+        
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="profil.html" class="navbar-link has-after">Profil</a>
+            </li>
+
+            <li>
+              <a href="mengenal-ambon.html" class="navbar-link has-after">Mengenal Ambon</a>
+            </li>
+
+            <li>
+              <a href="potensi-daerah.html" class="navbar-link has-after">Potensi Daerah</a>
+            </li>
+
+            <li>
+              <a href="Open-gov.html" class="navbar-link has-after">Open-Government</a>
+            </li>
+            
+            <li>
+              <a href="informasi.html" class="navbar-link has-after">Informasi</a>
+            </li>
+
+            <li>
+              <a href="berita.html" class="navbar-link has-after">Berita</a>
+            </li>
+
+            <li>
+              <a href="hubungi-kami.html" class="navbar-link has-after">Hubungi Kami</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="index.html" class="navbar-link" data-nav-link>HOME</a>
+        </li>
+
+        <li>
+          <a href="profil.html" class="navbar-link" data-nav-link>Profil</a>
+        </li>
+
+        <li>
+          <a href="mengenal-ambon.html" class="navbar-link" data-nav-link>Mengenal Ambon</a>
+        </li>
+
+        <li>
+          <a href="potensi-daerah.html" class="navbar-link" data-nav-link>Potensi Daerah</a>
+        </li>
+
+        <li>
+          <a href="Open-gov.html" class="navbar-link" data-nav-link>Open-Government</a>
+        </li>
+
+        <li>
+          <a href="informasi.html" class="navbar-link has-after">Informasi</a>
+        </li>
+
+        <li>
+          <a href="berita.html" class="navbar-link has-after">Berita</a>
+        </li>
+
+        <li>
+          <a href="hubungi-kami.html" class="navbar-link has-after">Hubungi Kami</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+
+  <main>   
+    <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Berita Terbaru</h2>
+          </div>
+          <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" alt="News Image">
+                        <div class="card-body">
+                            <h5 class="card-title">News Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at odio nec velit volutpat commodo. Sed luctus arcu at dolor ultricies malesuada.</p>
+                            <a href="#" class="btn btn-primary">Baca Berita Terbaru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="cardA">
+              <img src="https://via.placeholder.com/300" alt="News Image">
+                <div class="cardA-body">
+                  <h1 class="cardA-title">News Title</h1>
+                      <p>Diterbitkan 4 Hari Lalu</p>
+                  <div class="icon-with-text">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <span>7 April 2024</span>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <span>546</span>
+                  </div>
+                    <P class="card-text">
+                          DHTYJYKUULIULIU
+                    </p>
+                    <a href="Artikel-berita.html" class="btn-link">
+                          <span class="span">Lihat Selengkapnya</span>      
+                          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+            </div>
+            <div class="cardA">
+              <img src="https://via.placeholder.com/300" alt="News Image">
+                <div class="cardA-body">
+                  <h1 class="cardA-title">News Title</h1>
+                      <p>Diterbitkan 4 Hari Lalu</p>
+                  <div class="icon-with-text">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <span>7 April 2024</span>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <span>546</span>
+                  </div>
+                    <P class="card-text">
+                          DHTYJYKUULIULIU
+                    </p>
+                    <a href="Artikel-berita.html" class="btn-link">
+                          <span class="span">Lihat Selengkapnya</span>      
+                          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+            </div>
+          </div>
+        </section>
+    <section class="section shop" id="shop" aria-label="shop" data-section>
+      <div class="container">
+          <div class="cardA">
+              <img src="https://via.placeholder.com/300" alt="News Image">
+              <div class="cardA-body">
+                  <h1 class="cardA-title">News Title</h1>
+                  <p>Diterbitkan 4 Hari Lalu</p>
+                  <div class="icon-with-text">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <span>7 April 2024</span>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <span>546</span>
+                </div>
+                  <P class="card-text">
+                      Gabungan Organisasi Wanita (GOW) Kota Surabaya
+                      menggelar Garage Day dan Bazar Sembako Ramadan.
+                      Kegiatan tersebut serentak dilaksanakan di 31
+                      kecamatan dan dipusatkan di Kantor GOW, Jalan Tambaksari
+                      No 11 A, Kota Surabaya, Rabu (3/4/2024). 
+                  </p>
+                  <a href="Artikel-berita.html" class="btn-link">
+                      <span class="span">Lihat Selengkapnya</span>      
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+  
+  <section class="section shop" id="shop" aria-label="shop" data-section>
+    <div class="container">
+        <div class="cardA">
+            <img src="https://via.placeholder.com/300" alt="News Image">
+            <div class="cardA-body">
+                <h1 class="cardA-title">News Title</h1>
+                <p>Diterbitkan 4 Hari Lalu</p>
+                <div class="icon-with-text">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <span>7 April 2024</span>
+                  <ion-icon name="eye-outline"></ion-icon>
+                  <span>546</span>
+              </div>
+                <P class="card-text">
+                    Gabungan Organisasi Wanita (GOW) Kota Surabaya
+                    menggelar Garage Day dan Bazar Sembako Ramadan.
+                    Kegiatan tersebut serentak dilaksanakan di 31
+                    kecamatan dan dipusatkan di Kantor GOW, Jalan Tambaksari
+                    No 11 A, Kota Surabaya, Rabu (3/4/2024). 
+                </p>
+                <a href="Artikel-berita.html" class="btn-link">
+                    <span class="span">Lihat Selengkapnya</span>      
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="section shop" id="shop" aria-label="shop" data-section>
+  <div class="container">
+      <div class="cardA">
+          <img src="https://via.placeholder.com/300" alt="News Image">
+          <div class="cardA-body">
+              <h1 class="cardA-title">News Title</h1>
+              <p>Diterbitkan 4 Hari Lalu</p>
+              <div class="icon-with-text">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <span>7 April 2024</span>
+                <ion-icon name="eye-outline"></ion-icon>
+                <span>546</span>
+            </div>
+              <P class="card-text">
+                  Gabungan Organisasi Wanita (GOW) Kota Surabaya
+                  menggelar Garage Day dan Bazar Sembako Ramadan.
+                  Kegiatan tersebut serentak dilaksanakan di 31
+                  kecamatan dan dipusatkan di Kantor GOW, Jalan Tambaksari
+                  No 11 A, Kota Surabaya, Rabu (3/4/2024). 
+              </p>
+              <a href="Artikel-berita.html" class="btn-link">
+                  <span class="span">Lihat Selengkapnya</span>      
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+<section class="section shop" id="shop" aria-label="shop" data-section>
+  <div class="container">
+      <div class="cardA">
+          <img src="https://via.placeholder.com/300" alt="News Image">
+          <div class="cardA-body">
+              <h1 class="cardA-title">News Title</h1>
+              <p>Diterbitkan 4 Hari Lalu</p>
+              <div class="icon-with-text">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <span>7 April 2024</span>
+                <ion-icon name="eye-outline"></ion-icon>
+                <span>546</span>
+            </div>
+              <P class="card-text">
+                  Gabungan Organisasi Wanita (GOW) Kota Surabaya
+                  menggelar Garage Day dan Bazar Sembako Ramadan.
+                  Kegiatan tersebut serentak dilaksanakan di 31
+                  kecamatan dan dipusatkan di Kantor GOW, Jalan Tambaksari
+                  No 11 A, Kota Surabaya, Rabu (3/4/2024). 
+              </p>
+              <a href="Artikel-berita.html" class="btn-link">
+                  <span class="span">Lihat Selengkapnya</span>      
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-auto">
+              <nav>
+                  <ul class="pagination">
+                      <li class="pagination-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="pagination-item active"><a class="page-link" href="berita.html">1</a></li>
+                      <li class="pagination-item"><a class="page-link" href="berita-page-dua.html">2</a></li>
+                      <li class="pagination-item"><a class="page-link" href="berita.html">3</a></li>
+                      <li class="pagination-item">
+                          <a class="page-link" href="#">Next</a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </div>
+
+          <!-- 
+          <div class="card">
+              <img src="https://via.placeholder.com/400" alt="News Image">
+              <div class="card-content">
+                  <h2 class="card-title">News Title</h2>
+                 
+                  <p class="description">Description</p>
+                  <a href="#" class="btn-link">
+                    <span class="span">Lihat Selengkapnya</span>
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+              </div>  
+          </div>   -->
+          <!-- 
+        - #BANNER
+      
+
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.jpg')"></div>
+
+              </div>
+            </li>
+            <li>
+
+                  <h2 class="h2 card-title">Judul Berita</h2>
+  
+                  <p class="card-text">
+                    Gabungan Organisasi Wanita (GOW) Kota Surabaya
+                    menggelar Garage Day dan Bazar Sembako Ramadan.
+                    Kegiatan tersebut serentak dilaksanakan di 31
+                    kecamatan dan dipusatkan di Kantor GOW, Jalan Tambaksari
+                    No 11 A, Kota Surabaya, Rabu (3/4/2024).
+                  </p>
+  
+                  <a href="#" class="btn-link">
+                    <span class="span">Lihat Selengkapnya</span>
+  
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+  
+                </div>
+              </li>
+          </ul>
+
+        </div>
+      </section> -->
+    <article>
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Lokasi Kantor</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Alamat Dinas Pemkot :  <a href="#" class="link">Maps</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+(62)085 2568 4593</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">hello@gmail.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Dikelola Oleh</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Bidang Informasi dan Komunikasi Publik serta Statistik Dinas Komunikasi dan Informatika Kota Ambon</a>
+          </li>
+
+        </ul>
+<!--
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Infomation</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Start a Return</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Good emails.</p>
+
+          <p class="newsletter-text">
+            Enter your email below to be the first to know about new collections and product launches.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>-->
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="179" height="26" loading="lazy">
+      </a>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2024 Pemerintah Kota Ambon
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link for pagination
+  -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const pagination = document.getElementById('pagination');
+        const prevBtn = pagination.querySelector('.pagination-item:nth-child(1) a');
+        const nextBtn = pagination.querySelector('.pagination-item:last-child a');
+        const pageItems = pagination.querySelectorAll('.pagination-item');
+
+        let currentPage = 1;
+
+        // Function to update active page
+        function updateActivePage() {
+            pageItems.forEach(item => {
+                if (parseInt(item.textContent) === currentPage) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            prevBtn.parentElement.classList.toggle('disabled', currentPage === 1);
+            nextBtn.parentElement.classList.toggle('disabled', currentPage === pageItems.length - 1);
+        }
+
+        // Event listener for page link clicks
+        pagination.addEventListener('click', function(event) {
+            const target = event.target;
+            if (target.tagName === 'A') {
+                event.preventDefault();
+                const pageNumber = parseInt(target.textContent);
+                if (!isNaN(pageNumber)) {
+                    currentPage = pageNumber;
+                    updateActivePage();
+                } else if (target.textContent === 'Previous' && currentPage > 1) {
+                    currentPage--;
+                    updateActivePage();
+                } else if (target.textContent === 'Next' && currentPage < pageItems.length - 1) {
+                    currentPage++;
+                    updateActivePage();
+                }
+            }
+        });
+
+        // Initial update
+        updateActivePage();
+    });
+</script>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+   <!-- 
+    - js bootstrap
+  -->
+
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <section class="section shop" id="shop" aria-label="shop" data-section>
+    <div class="container">
+      <div class="cardA">
+        <img src="https://via.placeholder.com/300" alt="News Image">
+          <div class="cardA-body">
+            <h1 class="cardA-title">News Title</h1>
+                <p>Diterbitkan 4 Hari Lalu</p>
+            <div class="icon-with-text">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <span>7 April 2024</span>
+              <ion-icon name="eye-outline"></ion-icon>
+              <span>546</span>
+            </div>
+              <P class="card-text">
+                    DHTYJYKUULIULIU
+              </p>
+              <a href="Artikel-berita.html" class="btn-link">
+                    <span class="span">Lihat Selengkapnya</span>      
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
